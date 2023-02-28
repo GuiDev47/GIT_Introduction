@@ -22,48 +22,69 @@
 
     <br>
     <section id="nav">
-        <div id="onglet">
-
-        </div>
-        <div id="onglet"><a href="">Intégration HTML</a></div>
-        <div id="onglet"><a href="">CSS</a></div>
-        <div id="onglet"><a href="">Javascript</a></div>
-        <div id="onglet"><a href="">Php</a></div>
-        <div id="onglet"><a href="">Autres</a></div>
+        <div id="home"><img  src="home.png" alt="" height="30px", width="auto", top="10px"></div>
+        <div><a href="">Intégration HTML</a></div>
+        <div><a href="">CSS</a></div>
+        <div><a href="">Javascript</a></div>
+        <div><a href="">Php</a></div>
+        <div><a href="">Autres</a></div>
 
     </section>
+
 
     <h1>Composez votre menu</h1>
 
     <section id="selection">
-        <p>Entrée: </p><select name="entrées" id="">
-            <option value="test1">Test2</option>
-            <option value="test2">Test2</option>
-            <option value="test3">Test3</option>
-        </select>
+        <div>
+            <p style="display:inline">Entrée: </p>
+            <select name="entrées" class="select">
+                <option>Tomate-mozzarella</option>
+                <option>Tartare de légumes</option>
+                <option>Sablé de parmesan</option>
+            </select>
+        </div>
+        <div>
+            <p style="display:inline">Plat: </p>
+            <select name="entrées" class="select">
+                <option value="test1">Pâtes fraiches au foie gras</option>
+                <option value="test2">Homard grillé</option>
+                <option value="test3">Fricassé de noix</option>
+            </select>
+        </div>
 
-        <p>Plat: <span>Test</span></p>
+        <div>
+            <p style="display:inline">Dessert: </p>
+            <select name="entrées" class="select">
+                <option value="test1">Millefeuille</option>
+                <option value="test2">Fraise rhubarbe</option>
+                <option value="test3">Safé du Salvador</option>
+            </select>
+        </div>
 
-        <p>Dessert: <span>Test</span></p>
-
-        <button>Choisir</button>
+        <button onclick="calculerPrix()">Choisir</button>
 
 
     </section>
+    <hr>
+
+    <h1>Montant à payer</h1>
 
     <section id="prix">
-        <h1>Montant à payer</h1>
 
-        <p>Entrée: <span>Test</span></p>
 
-        <p>Plat: <span>Test</span></p>
+        <div><p>Entrée: </p><span id="prixEntrée"></span></div>
 
-        <p>Dessert: <span>Test</span></p>
+        <div><p>Plat: </p><span id="prixPlat"></span></div>
+
+        <div><p>Dessert: </p><span id="prixDessert"></span></div>
 
     </section>
+    <hr>
 
+
+    <h1>Total</h1>
     <section id="prixFinal">
-        <h1>Total: <span>Test</span></h1>
+        <p>Prix total: <span id="Total"></span></p>
     </section>
 
 
